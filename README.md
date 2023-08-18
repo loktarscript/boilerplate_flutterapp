@@ -1,16 +1,16 @@
-# tareas
+# Boilerplate Flutter
 
-A new Flutter project.
+## Caracteristicas
 
-## Getting Started
+Este proyecto es una base para poder trabajar con futuras aplicaciones de flutter.
+Posee una base de datos local con sqlite en donde se registra la información de usuarios para contener un modulo de autenticación, con registro y login.
 
-This project is a starting point for a Flutter application.
+## Pasos de instalación
 
-A few resources to get you started if this is your first Flutter project:
+Clonar el proyecto en tu directorio.
+```
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Cambiar nombre en pubspec.yaml
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
