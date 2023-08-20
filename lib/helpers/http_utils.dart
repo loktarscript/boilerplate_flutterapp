@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:tareas/helpers/global_vars.dart';
 
 class HttpUtils {
-  static const String baseUrl = 'https://api.example.com'; // Cambia por tu URL base
+  static const String baseUrl = GlobalVars.API_URL; // Cambia por tu URL base
 
   static Future<Map<String, dynamic>> get(String endpoint) async {
     final response = await http.get(Uri.parse('$baseUrl/$endpoint'));

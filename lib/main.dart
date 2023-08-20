@@ -6,7 +6,6 @@ import 'package:tareas/views/landing_page.dart';
 import 'package:tareas/views/loading_page.dart';
 import 'package:tareas/views/task_list_page.dart';
 
-
 void main() async{
   WidgetsFlutterBinding.ensureInitialized(); // Asegura la inicialización de Flutter
   final dbProvider = DatabaseProvider();
