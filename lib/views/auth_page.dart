@@ -7,12 +7,12 @@ import '../models/User.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 
-class LandingPage extends StatefulWidget {
+class AuthPage extends StatefulWidget {
   @override
-  _LandingPageState createState() => _LandingPageState();
+  _AuthPageState createState() => _AuthPageState();
 }
 
-class _LandingPageState extends State<LandingPage> {
+class _AuthPageState extends State<AuthPage> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   Color _selectedColor = Colors.blue; // Color inicial
@@ -24,7 +24,7 @@ class _LandingPageState extends State<LandingPage> {
     userProvider.setUser(user);
     print('Usuario creado: ${user.name}, ${user.email}, ${user.colorSettings}');
     // Después de almacenar el usuario, redirige a la página TaskListPage o realiza otras acciones necesarias
-    Navigator.pushReplacementNamed(context, '/task_list');
+    Navigator.pushReplacementNamed(context, '/home');
   }
 
 

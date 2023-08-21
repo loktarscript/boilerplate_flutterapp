@@ -21,7 +21,7 @@ class _LoadingPageState extends State<LoadingPage> {
 
     if (users.isNotEmpty) {
       // Redirigir a la página TaskListPage si hay un usuario activo
-      Navigator.pushReplacementNamed(context, '/task_list');
+      Navigator.pushReplacementNamed(context, '/home');
     } else {
       // Redirigir a la página LandingPage si no hay un usuario activo
       Navigator.pushReplacementNamed(context, '/landing');

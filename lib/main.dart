@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tareas/providers/DatabaseProvider.dart';
 import 'package:tareas/providers/UserProvider.dart';
-import 'package:tareas/views/landing_page.dart';
+import 'package:tareas/views/auth_page.dart';
 import 'package:tareas/views/loading_page.dart';
-import 'package:tareas/views/task_list_page.dart';
+import 'package:tareas/views/home_page.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized(); // Asegura la inicialización de Flutter
@@ -33,8 +33,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/loading',
       routes: {
         '/loading': (context) => LoadingPage(),
-        '/landing': (context) => LandingPage(),
-        '/task_list': (context) => TaskListPage(), // Ajusta la ruta de TaskListPage
+        '/auth': (context) => AuthPage(),
+        '/home': (context) => HomePage(), // Ajusta la ruta de TaskListPage
       },
     );
   }

@@ -7,14 +7,14 @@ import 'package:tareas/providers/UserProvider.dart';
 
 import '../models/Task.dart';
 
-class TaskListPage extends StatefulWidget {
+class HomePage extends StatefulWidget {
 
   @override
-  _TaskListPageState createState() => _TaskListPageState();
+  _HometPageState createState() => _HometPageState();
 
 }
 
-class _TaskListPageState extends State<TaskListPage> {
+class _HometPageState extends State<HomePage> {
   List<Task> _tasks = [];
   late User _activeUser;
   @override
@@ -67,7 +67,7 @@ class _TaskListPageState extends State<TaskListPage> {
     }
 
     // Redirige a la página de inicio de sesión o a donde corresponda
-    Navigator.pushReplacementNamed(context, '/landing'); // Cambia '/login' por la ruta adecuada
+    Navigator.pushReplacementNamed(context, '/auth'); // Cambia '/login' por la ruta adecuada
   }
 
 
